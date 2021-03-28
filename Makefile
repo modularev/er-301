@@ -33,6 +33,12 @@ core:
 core-install:
 	+$(MAKE) -f scripts/core.mk install
 
+ai:
+	+$(MAKE) -f scripts/ai.mk
+
+ai-install:
+	+$(MAKE) -f scripts/ai.mk install
+
 teletype:
 	+$(MAKE) -f scripts/teletype.mk
 
@@ -44,6 +50,9 @@ core-clean:
 
 teletype-clean:
 	+$(MAKE) -f scripts/teletype.mk clean
+
+ai-clean:
+	+$(MAKE) -f scripts/ai.mk clean
 
 sbl: 
 	+$(MAKE) -f scripts/sbl.mk
